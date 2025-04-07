@@ -1,0 +1,273 @@
+q1)Write a code for small astrology based on your life path number for that get date of birth
+from user then calculate life path number(use switch case)
+
+ex:- calculation for life path number
+	a=date%10
+	b=date/10
+	c=a+b
+	
+	if life path number:
+	1:Lucky
+	2:careful do you work
+	3:Storger
+	4:Happy
+	5:CAn get help
+	6:Dought
+	7:Sad
+	8:Like
+	9:Courage
+	
+ touch d7q1.sh
+  chmod 777 d7q1.sh
+  vi d7q1.sh
+	
+echo "Enter your date:"
+read date
+a=$(($date%10))
+b=$(($date/10))
+c=$(($a+$b))
+
+if [ $date -eq 28 ]; then
+echo "Lucky"
+
+elif [ $date -eq 29 ]; then
+echo "careful do you work"
+
+else
+
+case $c in
+1)echo "Lucky";;
+2)echo "careful do you work";;
+3)echo "Storger";;
+4)echo "Happy";;
+5)echo "CAn get help";;
+6)echo "Dought";;
+7)echo "Sad";;
+8)echo "Like";;
+9)echo "Courage";;
+esac
+
+fi
+
+:wq!
+./d7q1.sh
+
+
+///////////////////////////////////////////////
+
+
+
+
+
+
+
+2)Give list of numbers then calculate the summation and multiplication using for loop
+
+ex: 1 2 3 4 5
+summation =15
+multiplication =120
+
+
+touch d7q2.sh
+chmod 777 d7q2.sh
+vi d7q2.sh
+
+sum=0
+mul=1
+for((i=1;i<6;i++))
+do
+sum=$(($sum+$i))
+mul=$(($mul*$i))
+done
+echo "summation=$sum"
+echo "Multiplication=$mul"
+
+:wq!
+./d7q2.sh
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+q3)print the integer from 1 to 10 using while loop
+
+
+touch d7q3.sh
+chmod 777 d7q3.sh
+vi d7q3.sh
+
+i=1
+while [ $i -lt 11 ]
+do 
+echo $i
+i=$(($i+1))
+done
+
+:wq!
+./d7q3.sh
+
+q4)print the below pattern using nested loop
+column=7
+rows=7
+i)
+*
+**
+***
+****
+*****
+*******
+********
+
+for((i=1;i<7;i++))
+do
+for((j=0;j<i;j++))
+do
+echo -n "*"
+done
+echo " "
+done
+
+ii)
+*******
+******
+****
+***
+**
+*
+
+for((i=1;i<7;i++))
+do
+for((j=7;j>i;j--))
+do
+echo -n "*"
+done
+echo " "
+done
+
+iii)
+1
+22
+333
+4444
+55555
+666666
+
+for((i=1;i<7;i++))
+do
+for((j=1;j<i;j++))
+do
+echo -n "$i"
+done
+echo " "
+done
+
+
+
+
+iv)
+1
+12
+123
+1234
+12345
+123456
+
+for((i=1;i<7;i++))
+do
+for((j=1;j<i;j++))
+do
+echo -n "$j"
+done
+echo " "
+done
+
+
+v)
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+for ((i=1; i<=5; i++))
+do
+for ((k=5; k>i; k--))
+do
+echo -n " "
+done
+for ((j=1; j<=i; j++))
+do
+echo -n " *"
+done
+echo
+done
+
+
+
+	
+//CODE OUTPUT
+
+[2021ict110@MSI ~]$ touch d7q1.sh
+[2021ict110@MSI ~]$ chmod 777 d7q1.sh
+[2021ict110@MSI ~]$ vi d7q1.sh
+[2021ict110@MSI ~]$ ./d7q1.sh
+Enter your date:
+27
+Courage
+[2021ict110@MSI ~]$ touch d7q2.sh
+[2021ict110@MSI ~]$ chmod 777 d7q2.sh
+[2021ict110@MSI ~]$ ./d7q2.sh
+summation=15
+Multiplication=120
+[2021ict110@MSI ~]$ touch d7q3.sh
+[2021ict110@MSI ~]$ chmod 777 d7q3.sh
+[2021ict110@MSI ~]$ ./d7q3.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+[2021ict110@MSI ~]$ touch d7q4.sh
+[2021ict110@MSI ~]$ chmod 777 d7q4.sh
+[2021ict110@MSI ~]$ vi d7q4.sh
+[2021ict110@MSI ~]$ ./d7q4.sh
+*
+**
+***
+****
+*****
+******
+
+******
+*****
+****
+***
+**
+*
+
+1
+22
+333
+4444
+55555
+666666
+
+1
+12
+123
+1234
+12345
+123456
+
+     *
+    *  *
+   *  *  *
+  *  *  *  *
+ *  *  *  *  *
+[2021ict110@MSI ~]$ vi d7q4.sh
+[2021ict110@MSI ~]$
