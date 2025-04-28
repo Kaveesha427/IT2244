@@ -1,0 +1,168 @@
+Q1).print multipliaction table using for loop
+    1 X 2 = 2
+    2 x 2 = 2
+    ......
+	
+	let num=2
+	let mul=1
+	for((i=1;i<=12;i++))
+	do
+	mul=$(($i*$num))
+	echo $i "x" $num " = " $mul
+	done
+	
+..................................................................................................................
+	 
+Q2)i).        *
+             ***
+            *****
+	   *******
+	  *********
+	   *******
+	    *****
+	     ***
+	      *
+
+touch d9q2i.sh
+chmod 777 d9q2i.sh
+vi d9q2i.sh
+
+rows=5
+for ((i=1; i<=rows; i++))
+do
+    for ((j=i; j<rows; j++))
+    do
+        echo -n " "
+    done
+    for ((k=1; k<=((2*i-1)); k++))
+    do
+        echo -n "*"
+    done
+    echo
+done
+
+
+for((i=rows-1;i>=1;i--))
+do
+    for((j=rows;j>i;j--))
+    do
+      echo -n " "
+    done
+    for((k=1;k<=((2*i-1));k++))
+    do
+      echo -n "*"
+    done
+    echo
+done
+
+:wq!
+./d9q2i.sh
+
+
+..................................................................................................................
+
+   
+ii)     *****
+        *   *
+	*   *
+	*   *
+	*****
+	
+touch d9q2ii.sh
+chmod 777 d9q2ii.sh
+vi d9q2ii.sh
+	
+	
+	
+	for((i=1;i<=5;i++))
+	do
+	if [ $i -eq 1 ] || [ $i -eq 5 ]; then
+		for((j=1;j<=5;j++))
+		do
+		echo -n "*"
+		done
+		echo " "
+	else
+		for((j=1;j<=5;j++))
+		do
+			if [ $j -eq 1 ] || [ $j -eq 5 ]; then
+				echo -n "*"
+			else
+				echo -n " "
+			fi
+		done
+		echo " "
+	fi
+	done
+	
+:wq!
+./d9q2ii.sh	
+
+..................................................................................................................
+	
+	
+	
+	
+	
+	
+Q3).Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34
+Sum of the first 10 Fibonacci numbers is: 88
+
+touch d9q3.sh
+vi d9q3.sh
+chmod 777 d9q3.sh
+
+a=0
+b=1
+sum=1
+echo -n " " $a
+echo -n " " $b
+for((i=1;i<9;i++))
+do
+risalt=$(($a+$b))
+echo -n  " " $risalt
+a=$b
+b=$risalt
+sum=$(($sum+$risalt))
+done
+echo ""
+echo "Sum of the first 10 Fibonacci numbers is:" $sum
+
+:wq!
+./d9q3.sh
+
+..................................................................................................................
+
+
+Q4).Sum of prime numbers between 1 and 100 is: 1060
+
+touch d9q4.sh
+chmod 777 d9q4.sh
+vi d9q4.sh
+
+sum=0
+
+for ((i=2; i<=100; i++))
+do
+    is_prime=1
+    for ((j=2; j*j<=i; j++))
+    do
+        if (( i % j == 0 ))
+        then
+            is_prime=0
+            break
+        fi
+    done
+
+    if (( is_prime == 1 ))
+    then
+        sum=$((sum + i))
+    fi
+done
+
+echo "Sum of prime numbers between 1 and 100 is: $sum"
+
+:wq!
+./d9q4.sh
+
