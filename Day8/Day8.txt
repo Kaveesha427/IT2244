@@ -1,0 +1,105 @@
+sq1)fibonacci series
+output :first 10 fibonacci numbers:
+0  1 1 2 3 5 8 13 21 34 55
+
+touch d8q1.sh
+vi d8q1.sh
+chmod 777 d8q1.sh
+
+a=0
+b=1
+echo -n " " $a
+echo -n " " $b
+for((i=1;i<10;i++))
+do
+risalt=$(($a+$b))
+echo -n  " " $risalt
+a=$b
+b=$risalt
+done
+echo " "
+
+:wq!
+./d8q1.sh
+
+***********************************************************
+
+q2)Factorial 
+output:Factorial of 5 is:120
+
+touch d8q2.sh
+chmod 777 d8q2.sh
+vi d8q2.sh
+
+echo "Enter Number:"
+read n
+risalt=1
+for((i=1;i<=n;i++))
+do
+risalt=$(($risalt*$i))
+done
+echo "factorial of" $n "is" $risalt
+
+:wq!
+./d8q2.sh
+
+************************************************************
+
+
+q3)Multiple of 3 between 1 and 50
+
+touch d8q3.sh
+chmod 777 d8q3.sh
+vi d8q3.sh
+
+echo "enter number of multiplication table:"
+read num
+let i=1
+let risalt =1
+while [ $risalt -lt 50 ]
+do
+risalt=$(($num*$i))
+i=$(($i+1))
+echo $risalt
+done
+
+:wq!
+./d8q3.sh
+
+...................OUTPUT......................
+
+[2021ict110@MSI ~]$ ./d8q1.sh
+  0  1  1  2  3  5  8  13  21  34  55
+[2021ict110@MSI ~]$ vi d8q2.sh
+[2021ict110@MSI ~]$ ./d8q2.sh
+Enter Number:
+5
+Factorial of 5 is 120
+[2021ict110@MSI ~]$ touch d8q3.sh
+[2021ict110@MSI ~]$ chmod 777 d8q3.sh
+[2021ict110@MSI ~]$ vi d8q3.sh
+[2021ict110@MSI ~]$ ./d8q3.sh
+
+enter number of multiplication table:
+3
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+39
+42
+45
+48
+51
+[2021ict110@MSI ~]$
+
+
+
