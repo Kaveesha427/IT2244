@@ -1,0 +1,108 @@
+cal  //get the calendar
+
+date +%d  //get only the date from current date
+
+date +%y //get only the current year in 2 digits from current date
+
+date +%Y  //get only the current year from current date 
+
+date +%a //get the dayname in 3 letters from current date
+
+date +%A //get the full day name from current date
+
+date +%D //get the current date(mm/dd/yy)
+
+date +%m //get only the month of current date
+
+date +%M //get the minutes of the current time
+
+
+date +%T //get the current time
+
+date +%H //get the hour of current time
+
+date +%h //get the current date month in name.
+
+
+touch program1.sh //create program1.sh file
+
+vi program1.sh //edit the program1.sh file
+
+//insert these in program1.sh
+
+
+
+echo "Kaveesha"
+read name
+echo "Hi "$name
+echo "Number 1"
+read x
+echo "Number 2"
+read y
+sum=$(($x+$y))
+sub=$(($x-$y))
+mul=$(($x*$y))
+div=$(($x/$y))
+echo "Summation "$sum
+echo "Subtraction "$sub
+echo "Multiplication "$mul
+echo "Division "$div
+
+
+wq!
+
+chmod 777 program1.sh //give the permission
+
+./program1.sh //Read the program1.sh file
+
+
+Output code:
+
+
+{ ~ }  » cal                                                             ~
+     April 2025
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+
+{ ~ }  » date +%d                                                        ~
+30
+{ ~ }  » date +%y                                                        ~
+25
+{ ~ }  » date +%Y                                                        ~
+2025
+{ ~ }  » date +%A                                                        ~
+Wednesday
+{ ~ }  » date +%D                                                        ~
+04/30/25
+{ ~ }  » date +%m                                                        ~
+04
+{ ~ }  » date +%M                                                        ~
+02
+{ ~ }  » date +%T                                                        ~
+18:03:31
+{ ~ }  »                                                                 ~
+{ ~ }  » date +%H                                                        ~
+18
+{ ~ }  » date +%h                                                        ~
+Apr
+{ ~ }  » touch program1.sh                                               ~
+{ ~ }  »                                                                 ~
+{ ~ }  » vi program1.sh                                                ~ 1
+{ ~ }  » chmod 777 program1.sh                                           ~
+{ ~ }  » ./program1.sh                                                   ~
+Kaveesha
+Nethmi
+Hi Nethmi
+Number 1:
+6
+Number 2:
+3
+Summation :9
+Substraction :3
+Multiplication :18
+Division :3
+{ ~ }  »                    
