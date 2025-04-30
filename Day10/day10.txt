@@ -1,0 +1,72 @@
+
+//Enter 3 numbers and find LCM in first two numbers and find GCD in another two numbers
+
+touch quiz.sh
+chmod 777 quiz.sh
+vi quiz.sh
+
+Command:
+echo "Enter first number (num1): " 
+read num1
+echo "Enter second number (num2): "
+read num2
+"Enter third number (num3): "
+read num3
+
+//Calculate LCM of num1 and num2
+
+temp1=$num1
+temp2=$num2
+product=$((num1 * num2))
+
+while [ $temp2 -ne 0 ]
+do
+    rem=$((temp1 % temp2))
+    temp1=$temp2
+    temp2=$rem
+done
+gcd_lcm=$temp1
+lcm=$((product / gcd_lcm))
+
+//Calculate GCD of num2 and num3
+temp1=$num2
+temp2=$num3
+
+while [ $temp2 -ne 0 ]
+do
+    rem=$((temp1 % temp2))
+    temp1=$temp2
+    temp2=$rem
+done
+gcd=$temp1
+
+
+
+//Get Output 
+echo "LCM of $num1 and $num2 is: $lcm"
+echo "GCD of $num2 and $num3 is: $gcd"
+
+
+//save file 
+:wq!
+
+//run file
+./quiz.sh
+
+
+Output:
+
+
+[2021ict110@MSI ~]$ touch quiz.sh
+[2021ict110@MSI ~]$ chmod 777 quiz.sh
+[2021ict110@MSI ~]$ vi quiz.sh
+[2021ict110@MSI ~]$ ./quiz.sh
+Enter first number (num1):
+20
+Enter second number (num2):
+12
+./quiz.sh: line 5: Enter third number (num3): : command not found
+35
+LCM of 20 and 12 is: 60
+GCD of 12 and 35 is: 1
+[2021ict110@MSI ~]$
