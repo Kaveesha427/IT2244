@@ -1,0 +1,172 @@
+
+touch abc.csv  //create an empty file named abc.csv
+
+vi abc.csv //used to edit the abc.csv file(Comma Separated Value)
+
+
+//after entering all data press ctrl+c then :wq! (to exit editing)
+
+more abc.csv  //display file content
+
+less abc.csv //display file content allowing scrolling
+
+wc -l abc.csv //gives the number of rows(lines) in the abc.csv file
+
+head -3 abc.csv  //display the first 3 lines(rows) in the file
+
+tail -4 abc.csv //display the last 4 rows in the file
+
+cut -f 1,3 abc.csv  //extract the 1st and 3rd column from the abc.csv(but only if it's tab-delimited.)
+
+cut -d ',' -f 1,3 abc.csv //if the comma used as delimeter extract the 1st and 3rd column
+
+cut -d ',' -f 1,2 abc.csv > abc1.csv //extract the 1st and 2nd column and save it into new file named abc1.csv
+
+more abc1.csv //to display 1st and 2nd column that extracted in abc.csv
+
+ls -a  //list all the files including hidden files also
+
+ls -ltr  //list the files in the current directory 
+
+find *.csv //gives the all files with .csv extension 
+
+find *a* //gives the all files that contain a in file name
+
+//set the permission
+
+chmod 777 abc.csv
+Access Group	Binary Octal	Permission	Meaning
+Owner	         111	7	 rwx	Read, Write, Execute
+Group	         111	7	 rwx	Read, Write, Execute
+Others	         111	7	 rwx	Read, Write, Execute
+
+chmod 777 abc.csv
+
+exit //exit from the terminal window
+
+
+Output code:
+
+[2021ict110@MSI ~]$ touch aaa.csv
+[2021ict110@MSI ~]$ vi aaa.csv
+[2021ict110@MSI ~]$ more aaa.csv
+89,96,78
+63,89,78
+36,85,74
+95,84,75
+75,79,89
+98,97,84
+74,68,91
+89,68,49
+[2021ict110@MSI ~]$ less aaa.csv
+-bash: less: command not found
+[2021ict110@MSI ~]$ wc -l aaa.csv
+8 aaa.csv
+[2021ict110@MSI ~]$ head -3 aaa.csv
+89,96,78
+63,89,78
+36,85,74
+[2021ict110@MSI ~]$ tail -4 aaa.csv
+75,79,89
+98,97,84
+74,68,91
+89,68,49
+[2021ict110@MSI ~]$ cut -f 1,3 aaa.csv
+89,96,78
+63,89,78
+36,85,74
+95,84,75
+75,79,89
+98,97,84
+74,68,91
+89,68,49
+[2021ict110@MSI ~]$ cut -d ',' -f 1,3 aaa.csv
+89,78
+63,78
+36,74
+95,75
+75,89
+98,84
+74,91
+89,49
+[2021ict110@MSI ~]$ cut -d ',' -f 1,2 aaa.csv > abc.csv
+[2021ict110@MSI ~]$ more abc.csv
+89,96
+63,89
+36,85
+95,84
+75,79
+98,97
+74,68
+89,68
+[2021ict110@MSI ~]$ ls -a
+.              .q7.sh.swp        d7q2.sh  d9q1.sh     q2.sh
+..             .student.tsv.swo  d7q3.sh  d9q2i.sh    q3.sh
+.bash_history  .student.tsv.swp  d7q4.sh  d9q2ii.sh   q4.sh
+.bash_logout   1                 d8q1.sh  d9q3.sh     q5.sh
+.bash_profile  aaa.csv           d8q1.sq  d9q4.sh     q6.sh
+.bashrc        abc.csv           d8q2.sh  d9q4.sh~    q7.sh
+.d8q3.sh.swp   d7q1.sh           d8q3.sh  forloop.sh  student.tsv
+[2021ict110@MSI ~]$ ls -ltr
+total 88
+-rw-r--r-- 1 2021ict110 2021ict110   0 Apr  3 17:12 student.tsv
+-rw-r--r-- 1 2021ict110 2021ict110 135 Apr  5 15:06 1
+-rwxrwxrwx 1 2021ict110 2021ict110 112 Apr  5 21:13 forloop.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 364 Apr  5 21:21 q2.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 198 Apr  5 21:34 q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 361 Apr  5 21:36 q4.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 135 Apr  5 21:38 q5.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 148 Apr  5 21:40 q6.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 183 Apr  5 21:44 q7.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 380 Apr  7 21:40 d7q1.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 123 Apr  7 21:43 d7q2.sh
+-rwxrwxrwx 1 2021ict110 2021ict110  53 Apr  7 21:51 d7q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 477 Apr  7 22:59 d7q4.sh
+-rw-r--r-- 1 2021ict110 2021ict110   0 Apr 24 21:21 d8q1.sq
+-rwxrwxrwx 1 2021ict110 2021ict110 136 Apr 25 21:49 d8q1.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 131 Apr 25 21:50 d8q2.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 146 Apr 25 21:57 d8q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 100 Apr 26 00:36 d9q1.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 209 Apr 26 00:42 d9q3.sh
+----rwxrwx 1 2021ict110 2021ict110   0 Apr 26 00:42 d9q4.sh~
+-rwxrwxrwx 1 2021ict110 2021ict110 290 Apr 26 13:44 d9q2ii.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 357 Apr 29 00:39 d9q2i.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 321 Apr 29 00:42 d9q4.sh
+-rw-r--r-- 1 2021ict110 2021ict110  72 Apr 30 16:04 aaa.csv
+-rw-r--r-- 1 2021ict110 2021ict110  48 Apr 30 16:17 abc.csv
+[2021ict110@MSI ~]$ find *.csv
+aaa.csv
+abc.csv
+[2021ict110@MSI ~]$ find *a*
+aaa.csv
+abc.csv
+[2021ict110@MSI ~]$ chmod 777 aaa.csv
+[2021ict110@MSI ~]$ ls -l
+total 88
+-rw-r--r-- 1 2021ict110 2021ict110 135 Apr  5 15:06 1
+-rwxrwxrwx 1 2021ict110 2021ict110  72 Apr 30 16:04 aaa.csv
+-rw-r--r-- 1 2021ict110 2021ict110  48 Apr 30 16:17 abc.csv
+-rwxrwxrwx 1 2021ict110 2021ict110 380 Apr  7 21:40 d7q1.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 123 Apr  7 21:43 d7q2.sh
+-rwxrwxrwx 1 2021ict110 2021ict110  53 Apr  7 21:51 d7q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 477 Apr  7 22:59 d7q4.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 136 Apr 25 21:49 d8q1.sh
+-rw-r--r-- 1 2021ict110 2021ict110   0 Apr 24 21:21 d8q1.sq
+-rwxrwxrwx 1 2021ict110 2021ict110 131 Apr 25 21:50 d8q2.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 146 Apr 25 21:57 d8q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 100 Apr 26 00:36 d9q1.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 357 Apr 29 00:39 d9q2i.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 290 Apr 26 13:44 d9q2ii.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 209 Apr 26 00:42 d9q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 321 Apr 29 00:42 d9q4.sh
+----rwxrwx 1 2021ict110 2021ict110   0 Apr 26 00:42 d9q4.sh~
+-rwxrwxrwx 1 2021ict110 2021ict110 112 Apr  5 21:13 forloop.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 364 Apr  5 21:21 q2.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 198 Apr  5 21:34 q3.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 361 Apr  5 21:36 q4.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 135 Apr  5 21:38 q5.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 148 Apr  5 21:40 q6.sh
+-rwxrwxrwx 1 2021ict110 2021ict110 183 Apr  5 21:44 q7.sh
+-rw-r--r-- 1 2021ict110 2021ict110   0 Apr  3 17:12 student.tsv
+[2021ict110@MSI ~]$
+
