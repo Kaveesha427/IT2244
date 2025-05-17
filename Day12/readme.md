@@ -1,10 +1,12 @@
 
 1)<h3>Print Hello World</h3>
-
+<pre>
 ```include<stdio.h>
 int main(){
 printf("Hello World");
 return 0;```
+</pre>
+
 
 ![hello](https://github.com/user-attachments/assets/c8c17ce6-059d-47ea-b799-72e801bc9494)
 
