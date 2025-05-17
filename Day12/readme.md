@@ -12,9 +12,9 @@ return 0;
 
 2)<h3>Variable Declaration</h3>
 
-<h2>C Format Specifiers</h2>
-
-🔢 Integer Types
+⭐<h2>C Format Specifiers</h2>
+<pre>
+<u>Integer Types</u>
 %d or %i → Integer
 Example: int x = 10;
 
@@ -30,14 +30,14 @@ Example: 255 → FF
 %o → Octal Number
 Example: 10 → 12
 
-🔣 Character and String
+<u>Character and String</u>
 %c → Single Character
 Example: char ch = 'A';
 
 %s → String (array of characters)
 Example: char name[] = "John";
 
-🔢 Floating Point Numbers
+<u>Floating Point Numbers</u>
 %f → Float
 Example: float pi = 3.14;
 
@@ -47,6 +47,7 @@ Example: 3.14159 → 3.14
 %lf → Double
 Example: double d = 2.71828;
 int age =25;
+</pre>
 
 <pre>
 #include<stdio.h>
