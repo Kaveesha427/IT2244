@@ -1,0 +1,184 @@
+
+1)//print helloworld
+include<stdio.h>
+int main(){
+printf("Hello World");
+
+return 0;
+}
+
+2)
+//Asssign variable and print
+
+int age =25;
+
+#include<stdio.h>
+int main(){
+	int age =25;
+	printf("%d" ,age);
+	
+	return 0;
+}
+
+
+
+3)
+//When two variable assign in one varible name
+
+
+
+#include<stdio.h>
+int main(){
+	int age =25;
+	printf("%d\n" ,age);
+	age=31;
+	printf("\n%d\n",age);
+	
+	return 0;
+}
+
+3)
+
+//when two variable name declare but initilize for only one varable.
+then The value for firstnum will be a random (garbage) number, because it's uninitialized.
+
+#include<stdio.h>
+	int main(){
+	int firstnum,secondnum =25;
+	printf("fist number:%d",firstnum);
+	
+	printf("\nsecond number:%d\n",secondnum);
+	
+	return 0;
+}
+	
+
+4)
+	
+
+#include<stdio.h>
+	int main(){
+	int firstnum =25;
+	printf("fist number:%d",firstnum);
+	int secondnum=firstnum;
+	printf("\nsecond number:%d",secondnum);
+	
+	return 0;
+}
+
+
+5)
+//Prints the size (in bytes) of the age variable
+
+	#include<stdio.h>
+	int main(){
+	int age =10;
+	printf("%d",age);
+	
+	printf("\nsize: %zu",sizeof(age));
+	
+	return 0;
+}
+
+6)
+//double
+
+#include<stdio.h>
+int main(){
+	double num =10.34; 
+	printf("%lf",num);//10.340000(6 bytes)
+	printf("\n%.2lf",num);//only 2 decimal points
+	
+	
+	return 0;
+}
+
+7)
+//float
+#include<stdio.h>
+int main(){
+	float num =10.9f; 
+	printf("%f",num);//10.900000(6 bytes)
+	printf("\n%.1f",num);//10.9
+	return 0;
+}
+
+8)//char
+#include<stdio.h>
+int main(){
+	char character='z';
+	printf("%c",character); //print as Character
+	printf("\n%d",character); //print as integer(ASCII)
+	printf("\nSize :%zu",sizeof(character));
+	return 0;
+}
+
+[2021ict110@fedora ~]$ vi char.c
+[2021ict110@fedora ~]$ gcc char.c -o char
+[2021ict110@fedora ~]$ ./char
+z
+122[2021ict110@fedora ~]$
+
+9)
+//take input from user
+
+#include<stdio.h>
+int main(){
+	int age;
+	printf("Enter your age:");
+	//printf("%d",age);
+	scanf("%d", &age);
+	printf("Age is:%d",age);
+	return 0;
+}
+
+10)
+#include<stdio.h>
+
+//take multiple inputs together
+
+#include<stdio.h>
+int main(){
+double number;
+char alpha;
+printf("Enter input:");
+scanf("%lf %c",&number,&alpha);
+printf("double:%lf ",number);
+printf("\ncharacter:%c ",alpha);
+
+return 0;
+}
+
+11)
+
+// -single line comment ctrl+/
+/* */ - multiple comment ctrl+shift+/
+
+12)
+//c operators
+
+#include<stdio.h>
+int main(){
+int num1;
+int num2;
+
+
+printf("Enter number 1:");
+scanf("%d",&num1);
+printf("Enter number 2:");
+scanf("%d",&num2);
+
+int sum=num1+num2;
+int mul=num1*num2;
+int sub=num2-num1;
+int div=num2/num1;
+
+printf("summation:%d",sum);
+printf("\nmultiplication:%d",mul);
+printf("\nsubstraction :%d",sub);
+printf("\ndivision :%d",div);
+
+return 0;
+}
+
+
