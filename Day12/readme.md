@@ -1,7 +1,7 @@
 
 1)<h3>Print Hello World</h3>
 <pre>
-include<stdio.h>
+#include<stdio.h>
 int main(){
 printf("Hello World");
 return 0;
@@ -16,37 +16,36 @@ return 0;
 <pre>
 📝<u>Integer Types</u>
 %d or %i → Integer
-Example: int x = 10;
+
 
 %u → Unsigned Integer
-Example: unsigned int y = 50;
+
 
 %x → Hexadecimal (lowercase)
-Example: 255 → ff
+
 
 %X → Hexadecimal (UPPERCASE)
-Example: 255 → FF
+
 
 %o → Octal Number
-Example: 10 → 12
+
 
 📝<u>Character and String</u>
 %c → Single Character
-Example: char ch = 'A';
+
 
 %s → String (array of characters)
-Example: char name[] = "John";
+
 
 📝<u>Floating Point Numbers</u>
 %f → Float
-Example: float pi = 3.14;
+
 
 %.2f → Float with 2 decimal places
-Example: 3.14159 → 3.14
+
 
 %lf → Double
-Example: double d = 2.71828;
-int age =25;
+
 </pre>
 
 <pre>
@@ -63,8 +62,8 @@ int main(){
 ![variable1](https://github.com/user-attachments/assets/680e8d8f-6a5a-4bb6-82cd-b4f900da9a75)
 
 3)<h3>When two variable declare in one varible name</h3>
-🟢<i>Variables in C can be reassigned new values after they are declared.</i>
-🟢<i>The updated value replaces the old value in memory.</i>
+🟢Variables in C can be reassigned new values after they are declared.
+🟢The updated value replaces the old value in memory.
 
 <pre>
 #include<stdio.h>
