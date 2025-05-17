@@ -12,38 +12,26 @@ return 0;
 
 2)<h3>Variable Declaration</h3>
 
-⭐<h2>C Format Specifiers</h2>
+<h2>⭐C Format Specifiers</h2>
 <pre>
 📝<u>Integer Types</u>
+	
 %d or %i → Integer
-
-
 %u → Unsigned Integer
-
-
 %x → Hexadecimal (lowercase)
-
-
 %X → Hexadecimal (UPPERCASE)
-
-
 %o → Octal Number
 
-
 📝<u>Character and String</u>
+	
 %c → Single Character
-
-
 %s → String (array of characters)
 
 
 📝<u>Floating Point Numbers</u>
+	
 %f → Float
-
-
 %.2f → Float with 2 decimal places
-
-
 %lf → Double
 
 </pre>
@@ -53,9 +41,8 @@ return 0;
 int main(){
 	int age =25;
 	printf("%d" ,age);
-	
 	return 0;
-}
+	}
 </pre>
 
 
@@ -72,7 +59,6 @@ int main(){
 	printf("%d\n" ,age);
 	age=31;
 	printf("\n%d\n",age);
-	
 	return 0;
 }
 </pre>
@@ -86,7 +72,6 @@ int main(){
 	printf("fist number:%d",firstnum);
 	int secondnum=firstnum;
 	printf("\nsecond number:%d",secondnum);
-	
 	return 0;
 }</pre>
 ![variable3](https://github.com/user-attachments/assets/5bf3bc0c-70dd-4563-984d-88a3aa0e7b75)
@@ -97,7 +82,6 @@ int main(){
 	printf("fist number:%d",firstnum);
 	int secondnum=firstnum;
 	printf("\nsecond number:%d",secondnum);
-	
 	return 0;
 }</pre>
 
@@ -110,9 +94,7 @@ int main(){
 	int main(){
 	int age =10;
 	printf("%d",age);
-	
 	printf("\nsize: %zu",sizeof(age));
-	
 	return 0;
 }</pre>
 ![variable5](https://github.com/user-attachments/assets/c8d56017-5bb6-42af-8471-ebf3be869bab)
@@ -124,8 +106,6 @@ int main(){
 	double num =10.34; 
 	printf("%lf",num);//10.340000(6 bytes)
 	printf("\n%.2lf",num);//only 2 decimal points
-	
-	
 	return 0;
 }
 </pre>
@@ -186,7 +166,6 @@ printf("Enter input:");
 scanf("%lf %c",&number,&alpha);
 printf("double:%lf ",number);
 printf("\ncharacter:%c ",alpha);
-
 return 0;
 }
 </pre>
