@@ -14,7 +14,7 @@ return 0;
 
 ⭐<h2>C Format Specifiers</h2>
 <pre>
-<u>Integer Types</u>
+📝<u>Integer Types</u>
 %d or %i → Integer
 Example: int x = 10;
 
@@ -30,14 +30,14 @@ Example: 255 → FF
 %o → Octal Number
 Example: 10 → 12
 
-<u>Character and String</u>
+📝<u>Character and String</u>
 %c → Single Character
 Example: char ch = 'A';
 
 %s → String (array of characters)
 Example: char name[] = "John";
 
-<u>Floating Point Numbers</u>
+📝<u>Floating Point Numbers</u>
 %f → Float
 Example: float pi = 3.14;
 
@@ -63,8 +63,8 @@ int main(){
 ![variable1](https://github.com/user-attachments/assets/680e8d8f-6a5a-4bb6-82cd-b4f900da9a75)
 
 3)<h3>When two variable declare in one varible name</h3>
-*<i>Variables in C can be reassigned new values after they are declared.</i>
-*<i>The updated value replaces the old value in memory.</i>
+🟢<i>Variables in C can be reassigned new values after they are declared.</i>
+🟢<i>The updated value replaces the old value in memory.</i>
 
 <pre>
 #include<stdio.h>
@@ -161,7 +161,7 @@ int main(){
 ![variable8](https://github.com/user-attachments/assets/79b86fd2-8be4-44ec-8391-b1fb34bc6ef4)
 
 10)<h3>How to get User Input</h3>
-*<i>Uses scanf to read the age from user input.</i>
+🟢<i>Uses scanf to read the age from user input.</i>
 
 <pre>
 #include<stdio.h>
