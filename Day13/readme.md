@@ -3,7 +3,8 @@
 
 Enter your age and verify your alligible or not for election voting using
 if else condition
-![1](https://github.com/user-attachments/assets/e6b3c879-d0b0-4daa-8f45-0f4f01f729fe)
+
+![1](https://github.com/user-attachments/assets/fb523274-7854-47ce-b638-df7b7c551efd)
 
 2)Ternary operator
 
@@ -20,7 +21,8 @@ EXAMPLE 1:
 Enter the value between 1 to 7 and create a programm for following output:
 Enter the number between 1 to 7 : 1
 Today is Sunday!
-![3](https://github.com/user-attachments/assets/7cc5cdf4-1f0e-40e2-819f-d08a140f923d)
+
+![3](https://github.com/user-attachments/assets/2393eccf-ea26-4827-b986-4e1706f92bb6)
 
 
 EXAMPLE 2:
