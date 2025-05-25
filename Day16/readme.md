@@ -10,9 +10,9 @@ C-> Find Prime Numbers
 </pre>
 
 <pre>
-  #include <pre></pre><stdio.h></stdio.h></pre>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <pre><stdio.h></stdio.h></pre>
+#include <pre><unistd.h></pre>
+#include <pre><sys/wait.h></pre>
 
 int A, B, C;
 
@@ -131,7 +131,7 @@ The operating system cleans up the child process properly.
 
 Helps avoid zombies.
 
-<h3>📝 Why include #include <sys/wait.h> library?</h3>
+<h3>📝 Why include #include <pre><sys/wait.h> library?</pre></h3>
 Because wait() is declared in <sys/wait.h>. Without this:
 
 The compiler might give a warning or error.
