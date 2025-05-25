@@ -131,7 +131,7 @@ The operating system cleans up the child process properly.
 
 Helps avoid zombies.
 
-<h3>📝 Why include #include <sys/wait.h>?</h3>
+<h3>📝 Why include #include <sys/wait.h> library?</h3>
 Because wait() is declared in <sys/wait.h>. Without this:
 
 The compiler might give a warning or error.
