@@ -1,0 +1,102 @@
+#include<stdio.h>
+#include<unistd.h>
+
+int main(){
+	fork();
+	fork();
+	fork();
+	fork();
+	printf("Hello World!\n");
+	
+	
+	
+	return 0;
+}
+
+#include<stdio.h>
+#include<unistd.h>
+
+int main(){
+	int id = fork();
+	
+	if(id==0){
+		printf("I am child.\n");
+	}
+	else{
+		printf("I am parent.\n");
+	}
+	
+	return 0;
+}
+
+/*Print numbers from 1 to 10 and 
+1 to 5 should be print by child process and
+from 6 to 10 should be parent process
+calculate summation of those numbers.*/
+
+
+
+#include<stdio.h>
+#include<unistd.h>
+int main(){
+	int f = fork();
+	int sum1 = 0;
+	int sum2 = 0;
+	int total = 0;
+	
+	if(f==0){
+		printf("I'm child process");
+			
+		for(int i = 1; i<=5; i++){
+			printf("%d\n",i);
+			
+			sum1 = sum1 + i;
+		}
+	}
+	else{
+		printf("I'm parent process");
+		
+		for(int j = 6; j<=10;j++){
+			printf("%d\n",j);
+			
+			sum2 = sum2 + j;
+		}
+	}
+	
+	total = sum1 + sum2;
+	printf("The summation is: %d\n", total);
+	
+		
+	
+	return 0;
+	
+}
+
+/////////////////////////////////////////////////////////
+#include<stdio.h>
+#include<unistd.h>
+
+int main(){
+	int id = fork();
+	int n;
+	int sum = 0;
+	if(id==0){
+		n=1;
+	}
+	else{
+		n=6;
+	}
+	
+	for(int i=n;i<n+5;i++){
+		prinf("%d",i);
+		
+		sum= sum + i;
+	}
+	printf("\n");
+	printf("The sum is: %d\n", sum);
+	
+	return 0;
+	
+}
+	
+}
