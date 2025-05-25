@@ -10,7 +10,7 @@ C-> Find Prime Numbers
 </pre>
 
 <pre>
-  #include <stdio.h>
+  #include <pre></pre><stdio.h></stdio.h></pre>
 #include <unistd.h>
 #include <sys/wait.h>
 
