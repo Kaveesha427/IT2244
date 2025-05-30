@@ -5,7 +5,7 @@
 
 <pre>
   
-This program demonstrates Inter-Process Communication (IPC) using message queues in C.
+<h3>This program demonstrates Inter-Process Communication (IPC) using message queues in C.</h3>
 
 -The sender program creates a message queue using msgget() and sends data using msgsnd().
   It first generates a unique key using ftok().
@@ -15,7 +15,7 @@ This program demonstrates Inter-Process Communication (IPC) using message queues
 
 -Finally, the receiver deletes the message queue using msgctl() with IPC_RMID to clean up resources.
 
-Key Points:
+<h3>Key Points:</h3>
   
 -ftok() generates a unique key based on a file and an ID.
 
