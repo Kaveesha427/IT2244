@@ -1,0 +1,62 @@
+//question 1
+
+
+cd %USERPROFILE%\Desktop
+
+mkdir CSC2244 Marks Exam
+cd CSC2244
+mkdir practical theory "exam papers"
+
+cd practical
+
+echo. > practical.docx
+echo. > practical.txt
+echo. > practical.pptx
+
+cd..\theory
+echo Theory Text > theory.txt
+echo. > theory.docx
+echo. > theory.pptx
+
+cd "..\exam papers"
+echo Exam Text > exam.txt
+echo. > exam.docx
+echo. > exam.pptx
+
+cd %USERPROFILE%\Desktop
+
+echo. > "Icae Marks.xlsx"
+echo. > "Final Exam Marks.xlsx"
+
+move "Icae Marks.xlsx" Marks
+move "Final Exam.xlsx" Marks
+
+xcopy /E /I Marks Exam\Marks
+attrib +h Exam
+
+//question 2
+
+awk -F, 'NR==1 || $4 > 3.5' icaq2.csv
+
+awk -F, 'NR>1 {sum+=$4; count++} END {if (count > 0) print "Average GPA:", sum/count}' icaq2.csv
+
+//question 3
+
+touch icaq1.sh
+chmod 777 icaq1.sh
+vi icaq1.sh
+
+echo "Enter string 1:"
+read String_1
+echo "Enter string 2:"
+read String_2
+string1_count=${#String_1}
+string2_count=${#String_2}
+if [ $string1_count -gt $string2_count ]; then
+echo $String_1 "is larger than" $String_2
+else
+echo $String_2 "is larger than" $String_1
+fi
+
+./icaq3.sh
+
