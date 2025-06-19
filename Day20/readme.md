@@ -2,7 +2,7 @@
 
 <pre>
 🔹 1. Writer Process (process1)
-- Creates (or accesses) a shared memory segment using shmget().
+* Creates (or accesses) a shared memory segment using shmget().
 
 - Attaches to the memory using shmat().
 
